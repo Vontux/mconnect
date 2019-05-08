@@ -1,5 +1,5 @@
 # mconnect
-mconnect - KDE Connect protocol implementation in Vala/C
+mconnect - KDE Connect protocol implementation in Vala/C, modified from the original for use on Raspbian lite
 
 GLib and Gio should be available even on trimmed down systems. Vala is really
 needed only at build time. Json-glib does packet parsing. Libnotify is
@@ -7,18 +7,78 @@ responsible for displaying shell popups.
 
 # Building
 
-Build dependencies (using package names as found in Fedora):
+Build dependencies (using package names as found in Raspbian Stretch Lite):
 
-- vala
-- glib2-devel
-- gobject-introspection-devel
-- libgee-devel
-- json-glib
-- gnutls-devel
-- libnotify-devel
-- gtk3-devel
-- at-spi2-core-devel (and at-spi2-atk)
+- valac
+- valac-0.34-vapi
+- libvala-0.34-0
+- libglib2.0-bin
+- libglib2.0-devel-dev
+- libpcre3-dev
+- libpcre32-3
+- libcrecpp0v5
+- 
+- gobject-introspection-devel(maybe not?)
+- gobject-introspection(maybe)
+- python3-mako(maybe)
+- python3-markupsafe(maybe)
+- libgee-dev
+- gir1.2-gee-1.0
+- libgee2
+- json-glib-1.0-0
+- json-glib-1.0-common
+- gnutls-devel(maybenot)
+- libghc-gnutls-dev
+- ghc
+- binfmt-support
+- libbsd-dev
+- libghc-monads-tf-dev
+- libgmp-dev
+- libgmpxx4ldbl
+- libgnutls-dane0
+- libgnutls28-dev
+- libgnutlsxx28
+- libidn11-dev
+- libllvm3.7
+- libp11-kit-dev
+- libtasn1-6-dev
+- libtasn1-doc
+- libunbound2
+- llvm-3.7
+- llvm-3.7-dev
+- llvm-3.7-runtime
+- nettle-dev
+- libnotify-dev
+- gir1.2-gdkpixbuf-2.0
+- gir1.2-notify-0.7
+- libgdk-pixbuf2.0-dev
+- libnotify4
+- libpthread-stubs0-dev
+- libx11-dev
+- libx11-doc
+- libxau-dev
+- libxcb1-dev
+- libxdmcp-dev
+- x11proto-core-dev
+- xllproto-input-dev
+- xllproto-kb-dev
+- xorg-sgml-doctools
+- xtrans-dev
+- gtk3-devel(maybe)
+- libgtk3.0-cli
+- libgtk3.0-cli-dev
+- at-spi2-core-devel (and at-spi2-atk)(maybe not)
+- at-spi2-core
+- libatspi2.0-dev
+- gi1.2-atspi-2.0
+- libdus-1-dev
+- libxext-dev
+- libxtst-dev
+- x11proto-fixes-dev
+- x11proto-record-dev
+- x11proto-xext-dev
 - meson
+- ninja-build
 - pkg-config
 
 or see `extra/travis-build` in the source tree for example installation
