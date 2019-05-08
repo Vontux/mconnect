@@ -191,5 +191,5 @@ copied into `/etc/firewalld/services`.
 
 # Contributing
 
-Please open a Pull Request with your changes. Feel free to ping me (@bboozzoo)
-in description.
+Please open a Pull Request with your changes. Feel free to ping me (@Vontux)
+in description.If you want to do add any features as oppsed to improvements to make this run better under Raspbian, please do a pull request on the original project https://github.com/bboozzoo/mconnect .
